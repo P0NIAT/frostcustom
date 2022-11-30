@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    /* background-color: #333; */
+}
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.top-hero {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    z-index: 0;
+}
+
+.top-hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+}
+
+.navbar-brand {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.navbar-toggler {
+    font-size: 2.4rem;
+}
+
+header {
+    font-size: 2rem;
+}
+
+.carousel-item {
+    position: relative;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.carousel-img-one {
+    background-image: url('../img/main-carousel-1.jpg');
+}
+.carousel-img-two {
+    background-image: url('../img/main-carousel-2.jpg');
+}
+.carousel-img-three {
+    background-image: url('../img/main-carousel-3.jpg');
+}
+
+.home-boxes {
+    padding: 5em 0;   
+}
+
+.home-box i {
+    font-size: 4rem;
+}
+
+.home-box h3 {
+    font-size: 2.6rem;
+}
+
+.home-passion {
+    position: relative;
+    height: 350px;
+    background-image: url(../img/mainpic.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.home-brand h3 {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+footer {
+    font-size: 1.6rem;
+}
+
+/* ABOUTUS */
+
+.aboutus-hero {
+    background-image: url('../img/about/hd-wallpaper-2025863_640.jpg');
+    background-position: bottom;
+}
+
+.aboutus-info {
+    background-color: rgb(248, 248, 248);
+}
+
+.aboutus-info .container {
+    padding: 2em 0.5em;
+}
+
+.aboutus-text {
+    padding: 1.8em;
+}
+
+.aboutus-text h3 {
+    margin-bottom: 0.5em;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline #007bff;
+}
+
+.aboutus-text-right {
+    text-align: right;
+}
+
+.aboutus-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+/*  SERVICES  */
+
+.service-hero {
+    background-image: url('../img/servis/oldcar.jpg');
+    background-position-y: 77%;
+}
+
+.service-hero-box {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.service-hero-box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.service-hero-box.box-one {
+    background-image: url('../img/servis/engine.jpg');
+}
+
+.service-hero-box.box-two {
+    background-image: url('../img/servis/visual.jpg');
+}
+
+.service-hero-box.box-three {
+    background-image: url('../img/servis/car-audio.jpg');
+}
+
+.service-hero-box.box-four {
+    background-image: url('../img/servis/allinone.jpg');
+}
+
+/* PROJECTS */
+
+.projects-hero {
+    background-image: url('../img/projects/project-hero.jpg');
+    background-position: center;
+}
+
+.projects img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.projects .btn {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+/* CONTACTS */
+
+.contact-hero {
+    background-image: url('../img/contact/contact-hero.jpg');
+    background-position-y: 35%;
+}
+
+.contact input, .contact select, .contact textarea {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 992px) {
+    .aboutus-info .container {
+        padding: 0;
+    }
+
+    .aboutus-shadow {
+        box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .aboutus-text {
+        padding: 5em 0;
+        transform: skew(-15deg);
+    }
+
+    .aboutus-img {
+        height: auto;
+        transform: skew(-15deg);
+    }
+
+    .aboutus-text-left {
+        padding-right: 2em;
+        text-align: right;
+    }
+    .aboutus-text-right {
+        padding-left: 2em;
+        text-align: left;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .carousel-item {
+        height: 600px;
+    }
+    .carousel-img-one {
+        background-image: url('../img/main-carousel-1-hq.jpg');
+    }
+    .carousel-img-two {
+        background-image: url('../img/main-carousel-2-hq.jpg');
+    }
+    .carousel-img-three {
+        background-image: url('../img/main-carousel-3-hq.jpg');
+    }
+
+}
